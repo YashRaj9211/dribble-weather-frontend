@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hero{
+  background-image: url("https://images.unsplash.com/photo-1668195512310-1afb252a9137?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 40%;
+  background-clip: content-box;
+}
+
+.bc-card{
+  background-image: url("https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 250%;
+  transition-duration: 700ms;
+}
+.bc-card:hover{
+  background-size: 260%;
+  transition-duration: 700ms  ;
+}
+
+.bc-card:nth-child(3){
+  background-image: url("https://images.unsplash.com/photo-1601625193660-86f2807b024b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: -100px 0;
+  transition-duration: 700ms;
+}
+
+.bc-card:nth-child(3):hover{
+  background-size: 210%;
+  transition-duration: 700ms;
+}
+
+.bc-card:nth-child(5){
+  background-image: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2488&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  /* background-size: 200%; */
+  background-position: -100px 0 
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url("../public/font/Poppins-Thin.ttf") format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../public/font/Poppins-ExtraLight.ttf") format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../public/font/Poppins-Light.ttf") format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../public/font/Poppins-Regular.ttf") format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../public/font/Poppins-Medium.ttf") format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../public/font/Poppins-SemiBold.ttf") format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../public/font/Poppins-Bold.ttf") format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../public/font/Poppins-ExtraBold.ttf") format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../public/font/Poppins-Black.ttf") format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-blur{
+    @apply bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-30;
+  }
+}
